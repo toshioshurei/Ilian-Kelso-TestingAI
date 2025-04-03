@@ -1,0 +1,21 @@
+ID,Categoria,Requisito,Descripcion,Prioridad
+RNF-01,Rendimiento,Tiempo de carga,El sistema debe cargar la pagina principal en menos de 3 segundos,Alta
+RNF-02,Rendimiento,Tiempo de respuesta,El sistema debe responder a las acciones del usuario en menos de 1 segundo,Alta
+RNF-03,Disponibilidad,Tiempo de actividad,El sistema debe estar disponible al menos el 99% del tiempo,Alta
+RNF-04,Usabilidad,Experiencia de usuario,La interfaz debe ser intuitiva y facil de usar para usuarios sin experiencia previa,Alta
+RNF-05,Usabilidad,Accesibilidad,El sistema debe cumplir con estandares de accesibilidad WCAG 2.1 nivel AA,Media
+RNF-06,Seguridad,Comunicacion segura,Las comunicaciones con la API de TMDB deben realizarse mediante HTTPS,Alta
+RNF-07,Seguridad,Proteccion de API Key,La API Key de TMDB debe estar protegida y no ser accesible desde el cliente,Alta
+RNF-08,Escalabilidad,Soporte de usuarios concurrentes,El sistema debe soportar multiples usuarios concurrentes sin degradacion del servicio,Media
+RNF-09,Compatibilidad,Navegadores soportados,El sistema debe funcionar correctamente en Chrome, Firefox, Safari y Edge en sus versiones recientes,Alta
+RNF-10,Compatibilidad,Dispositivos soportados,El sistema debe funcionar en dispositivos moviles, tablets y escritorio,Alta
+RNF-11,Mantenibilidad,Estructura del codigo,El codigo debe seguir una estructura modular y patrones de diseno de React,Alta
+RNF-12,Mantenibilidad,Documentacion,El codigo debe estar documentado siguiendo estandares JSDoc,Media
+RNF-13,Tecnologia,Framework,El sistema debe utilizar React.js como framework principal,Alta
+RNF-14,Tecnologia,Compatibilidad con ES6+,El codigo debe usar y ser compatible con caracteristicas de ECMAScript 6 o superior,Alta
+RNF-15,Optimizacion,Tamano de bundle,El tamano del bundle JavaScript debe ser minimizado para optimizar la carga,Media
+RNF-16,Optimizacion,Lazy loading,El sistema debe implementar lazy loading para componentes y rutas,Media
+RNF-17,Optimizacion,Optimizacion de imagenes,Las imagenes deben estar optimizadas para web y usar tecnicas como lazy loading,Media
+RNF-18,Internacionalizacion,Soporte multiidioma,El sistema debe estar preparado para soportar multiples idiomas,Baja
+RNF-19,Cumplimiento,Terminos de uso TMDB,El sistema debe cumplir con los terminos de uso y atribucion de TMDB,Alta
+RNF-20,Experiencia de usuario,Estado de carga,El sistema debe proporcionar indicadores visuales del estado de carga de datos,Media
