@@ -1,1 +1,1 @@
-Requerimientos 
+Requerimientos https://claude.ai/share/b5183516-b9f8-4987-b377-cda18f1fe07f
