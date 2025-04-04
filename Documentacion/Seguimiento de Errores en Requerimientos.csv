@@ -1,0 +1,12 @@
+
+ID,Tipo,Descripción,Requerimientos en Conflicto,Impacto,Estado,Prioridad,Acción Recomendada
+ERR001,Contradicción,Conflicto entre requerimientos de login,"RF03 (Sin login), RF011 (Con login)",Alto,Abierto,Alta,"Definir si el sistema debe tener autenticación de usuarios o no, actualizando la documentación de requisitos"
+ERR002,Contradicción,Conflicto entre frameworks de desarrollo frontend,"RNF04 (React), RNF12 (Angular)",Alto,Abierto,Alta,"Establecer un único framework para el desarrollo (React o Angular), considerando que React ya está implementado"
+ERR003,Contradicción,Conflicto entre fuentes de datos,"RNF05 (TMDB), RNF11 (IMDB)",Alto,Abierto,Alta,"Seleccionar una única API como fuente de datos oficial, considerando que TMDB ya está implementado"
+ERR004,Inconsistencia,Error de numeración en requerimiento funcional,RF011 (Debería ser RF11),Bajo,Abierto,Baja,"Corregir la numeración para mantener consistencia en la documentación"
+ERR005,Ambigüedad,No se especifica el alcance de la aplicación Android,RF12,Medio,Abierto,Media,"Detallar los requerimientos específicos para la app Android, incluyendo funcionalidades mínimas y plataforma de desarrollo"
+ERR006,Verificación,Se requiere validar el tiempo de respuesta en diferentes condiciones,RNF01,Medio,Abierto,Media,"Implementar pruebas de rendimiento para verificar el cumplimiento del tiempo de respuesta máximo de 3 segundos"
+ERR007,Omisión,"No se especifica el nivel de seguridad requerido para login, si se implementa",RF011,Medio,Abierto,Media,"Definir los requerimientos de seguridad para el sistema de autenticación"
+ERR008,Dependencia,La implementación del login afecta otros requerimientos implementados,"RF011, RF03",Alto,Abierto,Alta,"Evaluar el impacto de añadir login en la arquitectura actual y el diseño de la interfaz"
+ERR009,Incompletitud,No se especifica el método de integración entre web y app Android,RF12,Medio,Abierto,Media,"Definir si se compartirá código entre plataformas o serán desarrollos separados"
+ERR010,Verificación,No hay criterios claros para evaluar la responsividad en diferentes dispositivos,"RF07, RNF08",Bajo,Abierto,Baja,"Establecer criterios específicos y casos de prueba para verificar la adaptabilidad en diferentes tamaños de pantalla"

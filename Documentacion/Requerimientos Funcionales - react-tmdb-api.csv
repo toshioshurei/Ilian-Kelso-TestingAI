@@ -1,0 +1,10 @@
+ID,Descripción,Prioridad,Estado
+RF01,El sistema debe mostrar un listado de películas populares en la página principal,Alta,Implementado
+RF03,El sistema no tiene pagina de login,Alta,Implementado
+RF04,El sistema debe mostrar una imagen de portada para cada película,Alta,Implementado
+RF05,El sistema debe mostrar la calificación/puntuación de cada película,Media,Implementado
+RF06,El sistema debe permitir navegar entre diferentes páginas de resultados,Media,Implementado
+RF07,El sistema debe tener una interfaz responsive que se adapte a diferentes dispositivos,Alta,Implementado
+RF08,El sistema debe mostrar películas relacionadas o recomendadas,Baja,Implementado
+RF09,El sistema debe mostrar fecha de lanzamiento de cada película,Media,Implementado
+RF10,El sistema debe mostrar la duración de cada película,Media,Implementado

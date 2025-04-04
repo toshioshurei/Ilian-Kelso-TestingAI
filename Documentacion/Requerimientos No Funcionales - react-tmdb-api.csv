@@ -1,0 +1,11 @@
+ID,Descripción,Categoría,Prioridad,Estado
+RNF01,El tiempo de respuesta para mostrar resultados no debe superar los 3 segundos,Rendimiento,Alta,Implementado
+RNF02,"La aplicación debe ser compatible con los navegadores Chrome, Firefox, Safari y Edge en sus versiones actuales",Compatibilidad,Alta,Implementado
+RNF03,La aplicación debe implementar manejo de errores para fallos en la conexión con la API,Fiabilidad,Alta,Implementado
+RNF04,La aplicación debe utilizar React como biblioteca principal para el desarrollo frontend,Implementación,Alta,Implementado
+RNF05,La aplicación debe utilizar la API oficial de TMDB como fuente de datos,Implementación,Alta,Implementado
+RNF06,La aplicación debe cumplir con los términos de servicio de la API de TMDB,Legal,Alta,Implementado
+RNF07,El código debe estar organizado siguiendo una arquitectura de componentes reutilizables,Mantenibilidad,Alta,Implementado
+RNF08,La aplicación debe tener un diseño responsive para adaptarse a pantallas desde 320px hasta 1920px de ancho,Usabilidad,Alta,Implementado
+RNF09,El sistema debe proteger la clave API de TMDB utilizando variables de entorno,Seguridad,Alta,Implementado
+RNF10,La aplicación debe utilizar técnicas de lazy loading para mejorar el rendimiento,Rendimiento,Media,Implementado
