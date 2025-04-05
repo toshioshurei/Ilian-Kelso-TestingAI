@@ -1,0 +1,7 @@
+ID,Tipo,Descripción,Requerimientos en Conflicto,Impacto,Estado,Prioridad,Acción Recomendada
+1,Funcional,El caso de prueba para “Buscar por género” no coincide con el diseño UI,Caso de uso CU-003 y diseño de interfaces pág. 5,El usuario no puede filtrar por género,Abierto,Alta,Ajustar diseño de UI o actualizar el caso de uso
+2,Funcional,El botón “Ver detalles” redirige incorrectamente en el caso de prueba,Caso de prueba CP-007 y diseño pág. 6,Navegación incorrecta en la app,Abierto,Alta,Corregir lógica de navegación en frontend
+3,Usabilidad,El diseño muestra un botón de “Favoritos” no mencionado en ningún caso de uso,Diseño UI pág. 7 vs Casos de Uso,Función huérfana sin requerimiento,Abierto,Media,Incluir la funcionalidad en los casos de uso
+4,Funcional,No se prueba el comportamiento ante error de red de API en ningún caso,Casos de prueba y CU faltantes,Falla silenciosa para el usuario,Abierto,Alta,Agregar casos de uso y prueba para manejo de errores
+5,Funcional,El buscador tiene comportamiento distinto al especificado en CU-002,CU-002 vs CP-003 y diseño UI pág. 4,Confusión en uso del buscador,Abierto,Alta,Alinear implementación con caso de uso
+6,Visual,El diseño muestra “pop-ups” que no se mencionan ni prueban,Diseño UI pág. 8,Falta de validación visual,Abierto,Baja,Agregar pruebas visuales y actualizar casos de uso

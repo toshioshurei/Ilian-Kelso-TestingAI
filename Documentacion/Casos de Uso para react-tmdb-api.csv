@@ -1,0 +1,52 @@
+ID,Nombre,Actor,Descripción,Precondiciones,Flujo Principal,Flujo Alternativo,Resultado Esperado,Requerimiento Relacionado
+CU01,"Visualizar listado de películas populares","Usuario","El usuario accede a la página principal para ver un listado de películas populares","Conexión a internet activa, API TMDB funcionando","1. El usuario accede a la aplicación
+2. El sistema muestra la página principal
+3. El sistema carga y muestra un listado de películas populares con sus portadas y detalles básicos","1. Si hay un error de conexión, el sistema muestra un mensaje de error
+2. Si la API no responde, el sistema muestra un mensaje indicando el problema","El usuario visualiza un listado de películas populares en la página principal",RF01,RF04,RF05,RF09,RF10
+CU02,"Navegar entre páginas de resultados","Usuario","El usuario navega entre diferentes páginas del listado de películas","Conexión a internet activa, API TMDB funcionando, Existencia de múltiples páginas de resultados","1. El usuario visualiza la primera página de resultados
+2. El usuario hace clic en el botón de 'Siguiente página' o en un número de página específico
+3. El sistema carga y muestra la página seleccionada con nuevas películas","1. Si es la última página, el botón 'Siguiente' aparece deshabilitado
+2. Si es la primera página, el botón 'Anterior' aparece deshabilitado
+3. Si hay un error al cargar la página, el sistema muestra un mensaje de error","El usuario navega exitosamente entre diferentes páginas de resultados",RF06
+CU03,"Visualizar detalles de una película","Usuario","El usuario selecciona una película para ver información detallada","Conexión a internet activa, API TMDB funcionando","1. El usuario hace clic en una película del listado
+2. El sistema carga y muestra la página de detalles con información completa de la película seleccionada
+3. El sistema muestra la portada, calificación, fecha de lanzamiento y duración de la película","1. Si hay un error al cargar los detalles, el sistema muestra un mensaje de error
+2. Si no hay información disponible para algún campo, el sistema muestra un indicador de información no disponible","El usuario visualiza todos los detalles de la película seleccionada",RF04,RF05,RF09,RF10
+CU04,"Ver películas relacionadas o recomendadas","Usuario","El usuario accede a recomendaciones basadas en una película seleccionada","Conexión a internet activa, API TMDB funcionando, Usuario visualizando detalles de una película","1. El usuario visualiza los detalles de una película
+2. El sistema carga y muestra una sección de películas relacionadas o recomendadas
+3. El usuario puede navegar por las recomendaciones","1. Si no hay películas relacionadas disponibles, el sistema no muestra la sección o muestra un mensaje indicando que no hay recomendaciones
+2. Si hay un error al cargar las recomendaciones, el sistema continúa mostrando el resto de la información","El usuario visualiza películas relacionadas o recomendadas basadas en la película que está viendo",RF08
+CU05,"Acceder a la aplicación desde un dispositivo móvil","Usuario móvil","El usuario accede a la aplicación desde un dispositivo con pantalla pequeña","Dispositivo móvil con conexión a internet, Navegador compatible","1. El usuario accede a la URL de la aplicación desde un dispositivo móvil
+2. El sistema detecta el tamaño de pantalla
+3. El sistema adapta la interfaz para optimizar la visualización en pantalla pequeña","1. Si el dispositivo tiene un tamaño de pantalla no estándar, el sistema se adapta utilizando reglas de diseño responsive","El usuario visualiza correctamente la aplicación con una interfaz adaptada a su dispositivo móvil",RF07,RNF08
+CU06,"Acceder a la aplicación desde una tablet","Usuario tablet","El usuario accede a la aplicación desde un dispositivo con pantalla mediana","Tablet con conexión a internet, Navegador compatible","1. El usuario accede a la URL de la aplicación desde una tablet
+2. El sistema detecta el tamaño de pantalla
+3. El sistema adapta la interfaz para optimizar la visualización en pantalla mediana","1. Si el dispositivo tiene un tamaño de pantalla no estándar, el sistema se adapta utilizando reglas de diseño responsive","El usuario visualiza correctamente la aplicación con una interfaz adaptada a su dispositivo tablet",RF07,RNF08
+CU07,"Acceder a la aplicación desde un ordenador","Usuario desktop","El usuario accede a la aplicación desde un dispositivo con pantalla grande","Ordenador con conexión a internet, Navegador compatible","1. El usuario accede a la URL de la aplicación desde un ordenador
+2. El sistema detecta el tamaño de pantalla
+3. El sistema adapta la interfaz para optimizar la visualización en pantalla grande","1. Si la ventana del navegador se redimensiona, la interfaz se adapta dinámicamente","El usuario visualiza correctamente la aplicación con una interfaz que aprovecha el espacio disponible en pantalla grande",RF07,RNF08
+CU08,"Experimentar carga progresiva de imágenes","Usuario","El usuario experimenta la carga progresiva de imágenes al navegar por la aplicación","Conexión a internet activa","1. El usuario accede a la aplicación
+2. El sistema carga inicialmente solo las imágenes visibles en pantalla
+3. A medida que el usuario hace scroll, el sistema carga las nuevas imágenes que entran en el viewport","1. Si la conexión es lenta, se pueden mostrar placeholders mientras las imágenes cargan
+2. Si una imagen no puede cargarse, se muestra una imagen predeterminada o un indicador de error","El usuario experimenta una carga eficiente de la aplicación, con imágenes que se cargan progresivamente según se necesitan",RNF10
+CU09,"Manejar error de conexión a la API","Usuario","El usuario recibe información adecuada cuando hay problemas de conexión con la API","Aplicación cargada, Problema de conexión a internet o a la API","1. El usuario intenta realizar una acción que requiere datos de la API
+2. El sistema detecta un problema de conexión
+3. El sistema muestra un mensaje de error amigable indicando el problema y posibles soluciones","1. Si la conexión se restablece, el sistema puede ofrecer la opción de reintentar
+2. Si el error es específico de la API, el mensaje puede indicar un problema temporal del servicio","El usuario recibe información clara sobre el problema de conexión y no experimenta bloqueos o comportamientos inesperados de la aplicación",RNF03
+CU10,"Visualizar calificaciones de películas","Usuario","El usuario visualiza las calificaciones de las películas para tomar decisiones informadas","Conexión a internet activa, API TMDB funcionando","1. El usuario visualiza el listado de películas
+2. El sistema muestra para cada película su calificación o puntuación
+3. El usuario puede comparar rápidamente las calificaciones de diferentes películas","1. Si no hay calificación disponible para alguna película, el sistema puede mostrar 'N/A' o un indicador similar","El usuario puede ver claramente las calificaciones de las películas y utilizarlas como criterio de selección",RF05
+CU11,"Ver fecha de lanzamiento de películas","Usuario","El usuario visualiza las fechas de lanzamiento de las películas","Conexión a internet activa, API TMDB funcionando","1. El usuario visualiza el listado de películas o los detalles de una película específica
+2. El sistema muestra la fecha de lanzamiento de cada película
+3. El usuario puede identificar películas recientes o clásicas según su fecha","1. Si no hay fecha disponible para alguna película, el sistema puede mostrar 'Fecha desconocida' o un indicador similar","El usuario puede ver claramente las fechas de lanzamiento de las películas",RF09
+CU12,"Ver duración de películas","Usuario","El usuario visualiza la duración de las películas para planificar su tiempo","Conexión a internet activa, API TMDB funcionando","1. El usuario visualiza los detalles de una película específica
+2. El sistema muestra la duración de la película en minutos o en formato hh:mm
+3. El usuario puede utilizar esta información para decidir si ver la película","1. Si no hay información de duración disponible, el sistema puede mostrar 'Duración desconocida' o un indicador similar","El usuario puede ver claramente la duración de cada película",RF10
+CU13,"Acceder a la aplicación con una conexión lenta","Usuario con conexión limitada","El usuario accede y utiliza la aplicación con una conexión a internet de baja velocidad","Conexión a internet lenta pero funcional","1. El usuario accede a la aplicación con una conexión lenta
+2. El sistema prioriza la carga de elementos críticos
+3. El sistema implementa lazy loading para optimizar recursos
+4. El usuario puede interactuar con la aplicación aunque la carga completa tome más tiempo","1. El sistema puede mostrar indicadores de carga o skeleton screens mientras el contenido se descarga
+2. Si algún recurso no esencial falla en cargar, la funcionalidad principal sigue disponible","El usuario puede utilizar la aplicación con una experiencia aceptable incluso con una conexión lenta",RNF01,RNF10
+CU14,"Acceder a la aplicación desde diferentes navegadores","Usuario con navegador específico","El usuario accede a la aplicación desde su navegador preferido","Navegador compatible (Chrome, Firefox, Safari o Edge)","1. El usuario accede a la URL de la aplicación desde su navegador
+2. El sistema detecta el navegador
+3. La aplicación se renderiza correctamente adaptándose a las particularidades del navegador","1. Si hay alguna característica no soportada por el navegador específico, el sistema muestra una alternativa o degradación graciosa","El usuario experimenta una visualización y funcionamiento consistente independientemente del navegador utilizado",RNF02

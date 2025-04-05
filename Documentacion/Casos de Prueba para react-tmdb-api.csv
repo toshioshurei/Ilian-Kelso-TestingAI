@@ -1,0 +1,72 @@
+ID,Nombre,Objetivo,Precondiciones,Datos de Entrada,Pasos,Resultado Esperado,Requerimientos Relacionados,Casos de Uso Relacionados
+CP01,Verificar visualización de películas populares,Comprobar que se muestra correctamente el listado de películas populares en la página principal,Conexión a internet activa; API TMDB funcionando,N/A,"1. Acceder a la URL principal de la aplicación
+2. Observar la página principal",Se debe mostrar un listado de películas populares con sus portadas e información básica,RF01;RF04,CU01
+CP02,Verificar información básica de películas,Comprobar que cada película en el listado muestra su información básica,Conexión a internet activa; API TMDB funcionando; Listado de películas cargado,N/A,"1. Acceder a la URL principal de la aplicación
+2. Verificar la información mostrada para cada película del listado",Cada película debe mostrar: título, imagen de portada, calificación y fecha de lanzamiento,RF04;RF05;RF09,CU01;CU10;CU11
+CP03,Verificar navegación entre páginas,Comprobar que es posible navegar entre diferentes páginas de resultados,Conexión a internet activa; API TMDB funcionando; Existencia de múltiples páginas,N/A,"1. Acceder a la URL principal de la aplicación
+2. Hacer clic en el botón 'Siguiente página'
+3. Verificar carga de nueva página
+4. Hacer clic en el botón 'Página anterior'
+5. Verificar regreso a página inicial",El sistema debe cambiar entre páginas mostrando diferentes conjuntos de películas; Los botones de navegación deben habilitarse/deshabilitarse según corresponda,RF06,CU02
+CP04,Verificar detalles de película,Comprobar que al seleccionar una película se muestran sus detalles completos,Conexión a internet activa; API TMDB funcionando; Listado de películas cargado,N/A,"1. Acceder a la URL principal de la aplicación
+2. Hacer clic en una película del listado",Se debe mostrar una página con detalles completos de la película: portada en mayor tamaño, título, sinopsis, calificación, fecha de lanzamiento, duración,RF04;RF05;RF09;RF10,CU03;CU10;CU11;CU12
+CP05,Verificar películas recomendadas,Comprobar que en la página de detalles se muestran películas relacionadas o recomendadas,Conexión a internet activa; API TMDB funcionando; Visualización de detalles de una película,N/A,"1. Acceder a la URL principal de la aplicación
+2. Hacer clic en una película del listado
+3. Buscar sección de películas recomendadas",Se debe mostrar una sección con películas relacionadas o recomendadas basadas en la película visualizada,RF08,CU04
+CP06,Verificar responsive en móvil,Comprobar que la interfaz se adapta correctamente a dispositivos móviles,Dispositivo móvil o emulador con pantalla de 320px-480px; Conexión a internet activa,"Dimensiones: 375px x 667px (iPhone 8)","1. Acceder a la URL desde un dispositivo móvil o emulador
+2. Navegar por la aplicación (listado principal, páginas, detalles)",La interfaz debe adaptarse automáticamente: elementos redimensionados, menús ajustados, distribución vertical cuando sea necesario,RF07;RNF08,CU05
+CP07,Verificar responsive en tablet,Comprobar que la interfaz se adapta correctamente a tablets,Tablet o emulador con pantalla de 768px-1024px; Conexión a internet activa,"Dimensiones: 768px x 1024px (iPad)","1. Acceder a la URL desde una tablet o emulador
+2. Navegar por la aplicación (listado principal, páginas, detalles)",La interfaz debe adaptarse automáticamente: elementos redimensionados, aprovechamiento del espacio adicional,RF07;RNF08,CU06
+CP08,Verificar responsive en desktop,Comprobar que la interfaz se adapta correctamente a ordenadores,Ordenador con pantalla de más de 1024px; Conexión a internet activa,"Dimensiones: 1920px x 1080px","1. Acceder a la URL desde un ordenador
+2. Navegar por la aplicación (listado principal, páginas, detalles)
+3. Redimensionar ventana del navegador",La interfaz debe adaptarse automáticamente: elementos distribuidos horizontalmente, aprovechamiento del espacio,RF07;RNF08,CU07
+CP09,Verificar carga progresiva de imágenes,Comprobar que las imágenes se cargan progresivamente al hacer scroll,Conexión a internet activa; API TMDB funcionando,N/A,"1. Acceder a la URL principal de la aplicación
+2. Observar la carga inicial
+3. Hacer scroll lento hacia abajo",Las imágenes deben cargarse progresivamente a medida que entran en el viewport; No se deben cargar todas las imágenes al inicio,RNF10,CU08
+CP10,Verificar tiempo de respuesta,Comprobar que el tiempo de respuesta es menor a 3 segundos,Conexión a internet estable; Herramienta para medir tiempos de carga (DevTools),N/A,"1. Abrir herramienta de medición de rendimiento
+2. Acceder a la URL principal de la aplicación
+3. Medir tiempo hasta visualización de contenido
+4. Repetir para página de detalles",El tiempo para mostrar contenido usable no debe superar los 3 segundos,RNF01,CU13
+CP11,Verificar manejo de errores de conexión,Comprobar que la aplicación maneja adecuadamente los errores de conexión,Capacidad para simular desconexión de internet o bloqueo de API,N/A,"1. Acceder a la URL principal de la aplicación
+2. Desconectar internet o bloquear conexión a API TMDB
+3. Intentar cargar nuevos datos (cambiar página o ver detalles)",Se debe mostrar un mensaje de error amigable indicando el problema de conexión,RNF03,CU09
+CP12,Verificar compatibilidad con Chrome,Comprobar que la aplicación funciona correctamente en Chrome,Navegador Google Chrome en versión actual; Conexión a internet activa,N/A,"1. Abrir Google Chrome
+2. Acceder a la URL de la aplicación
+3. Navegar por diferentes funcionalidades",La aplicación debe funcionar correctamente sin errores visuales o funcionales,RNF02,N/A
+CP13,Verificar compatibilidad con Firefox,Comprobar que la aplicación funciona correctamente en Firefox,Navegador Mozilla Firefox en versión actual; Conexión a internet activa,N/A,"1. Abrir Mozilla Firefox
+2. Acceder a la URL de la aplicación
+3. Navegar por diferentes funcionalidades",La aplicación debe funcionar correctamente sin errores visuales o funcionales,RNF02,N/A
+CP14,Verificar compatibilidad con Safari,Comprobar que la aplicación funciona correctamente en Safari,Navegador Safari en versión actual; Conexión a internet activa,N/A,"1. Abrir Safari
+2. Acceder a la URL de la aplicación
+3. Navegar por diferentes funcionalidades",La aplicación debe funcionar correctamente sin errores visuales o funcionales,RNF02,N/A
+CP15,Verificar compatibilidad con Edge,Comprobar que la aplicación funciona correctamente en Edge,Navegador Microsoft Edge en versión actual; Conexión a internet activa,N/A,"1. Abrir Microsoft Edge
+2. Acceder a la URL de la aplicación
+3. Navegar por diferentes funcionalidades",La aplicación debe funcionar correctamente sin errores visuales o funcionales,RNF02,N/A
+CP16,Verificar rendimiento con conexión lenta,Comprobar que la aplicación es utilizable con conexión lenta,Herramienta para limitar velocidad de conexión (DevTools); Conexión a internet activa,"Velocidad: 3G (1.5 Mbps)","1. Configurar limitación de red a conexión lenta (3G)
+2. Acceder a la URL de la aplicación
+3. Navegar por diferentes funcionalidades",La aplicación debe cargar progresivamente; Elementos críticos deben aparecer primero; Debe ser utilizable aunque tarde más en cargar completamente,RNF01;RNF10,CU13
+CP17,Verificar uso de variables de entorno para API key,Comprobar que la clave API está protegida mediante variables de entorno,Acceso al código fuente o capacidad de inspección de red,N/A,"1. Inspeccionar solicitudes de red a la API TMDB
+2. Verificar cómo se gestiona la clave API",La clave API no debe estar hardcodeada en el código fuente accesible desde el cliente; Debe utilizarse un mecanismo de variables de entorno,RNF09,N/A
+CP18,Verificar calificaciones de películas,Comprobar que se muestran correctamente las calificaciones de películas,Conexión a internet activa; API TMDB funcionando,N/A,"1. Acceder a la URL principal de la aplicación
+2. Verificar que cada película muestra su calificación/puntuación
+3. Acceder a los detalles de una película
+4. Verificar que se muestra la calificación",Las calificaciones deben mostrarse claramente tanto en el listado como en la página de detalles; Formato numérico con escala visible o intuitiva,RF05,CU10
+CP19,Verificar fechas de lanzamiento,Comprobar que se muestran correctamente las fechas de lanzamiento,Conexión a internet activa; API TMDB funcionando,N/A,"1. Acceder a la URL principal de la aplicación
+2. Verificar que cada película muestra su fecha de lanzamiento
+3. Acceder a los detalles de una película
+4. Verificar que se muestra la fecha de lanzamiento",Las fechas de lanzamiento deben mostrarse claramente tanto en el listado como en la página de detalles; Formato de fecha consistente y legible,RF09,CU11
+CP20,Verificar duración de películas,Comprobar que se muestra correctamente la duración de las películas,Conexión a internet activa; API TMDB funcionando,N/A,"1. Acceder a los detalles de una película
+2. Verificar que se muestra la duración de la película",La duración debe mostrarse claramente en la página de detalles; Formato consistente (minutos o hh:mm),RF10,CU12
+CP21,Verificar ausencia de página de login,Confirmar que el sistema no tiene página de login,N/A,N/A,"1. Acceder a la URL principal de la aplicación
+2. Navegar por las diferentes secciones
+3. Buscar indicadores de login/registro",No debe existir ninguna página, botón o formulario de login/registro,RF03,N/A
+CP22,Verificar arquitectura de componentes,Evaluar que el código sigue una arquitectura de componentes reutilizables,Acceso al código fuente,N/A,"1. Revisar estructura de archivos y carpetas
+2. Analizar implementación de componentes React
+3. Evaluar reutilización de componentes",El código debe estar organizado siguiendo principios de componentes reutilizables; Debe haber separación clara de responsabilidades,RNF07,N/A
+CP23,Verificar cumplimiento de términos de TMDB,Comprobar que la aplicación cumple con los términos de servicio de TMDB,Conocimiento de los términos de TMDB; Acceso a la aplicación completa,N/A,"1. Verificar presencia de atribuciones requeridas
+2. Comprobar uso adecuado de logos
+3. Verificar respeto a límites de API",La aplicación debe mostrar atribuciones a TMDB según sus términos; Deben respetarse restricciones de uso de la API,RNF06,N/A
+CP24,Verificar uso de React,Confirmar que la aplicación está desarrollada con React,Acceso al código fuente o capacidad de inspección del DOM,N/A,"1. Inspeccionar el código fuente o DOM
+2. Identificar elementos característicos de React",La aplicación debe estar desarrollada utilizando React como framework principal,RNF04,N/A
+CP25,Verificar uso de API oficial TMDB,Confirmar que se utiliza la API oficial de TMDB,Acceso a las peticiones de red o al código fuente,N/A,"1. Inspeccionar solicitudes de red
+2. Verificar los endpoints utilizados",Las solicitudes deben dirigirse a los endpoints oficiales de la API de TMDB,RNF05,N/A
