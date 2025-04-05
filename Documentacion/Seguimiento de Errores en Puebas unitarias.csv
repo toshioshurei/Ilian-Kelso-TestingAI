@@ -1,0 +1,3 @@
+ID,Tipo,Descripción,Requerimientos en Conflicto,Impacto,Estado,Prioridad,Acción Recomendada
+1,Funcional,El caso de prueba para moviesAPI › getSimilarMovies should fetch similar movies,,No se reciven peliculas similares,Abierto,Alta,
+2,Funcional,getTopMovies should fetch top-rated movies,,no carga lista de peliculas,Abierto,Alta,
