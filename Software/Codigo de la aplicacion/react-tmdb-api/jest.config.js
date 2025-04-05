@@ -1,10 +1,8 @@
-// jest.config.cjs
+// jest.config.cs
 
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  moduleNameMapper: {
-    '^@constants$': '<rootDir>/src/constants',
-    '^@types$': '<rootDir>/src/types',
-  },
+export const preset = 'ts-jest';
+export const testEnvironment = 'node';
+export const moduleNameMapper = {
+  '^@constants$': '<rootDir>/src/constants',
+  '^@types$': '<rootDir>/src/types',
 };
