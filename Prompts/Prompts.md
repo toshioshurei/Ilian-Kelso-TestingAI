@@ -9,3 +9,4 @@ Casos de prueba integracion https://chatgpt.com/share/67f08505-e110-8006-a6f4-ba
 Pruebas de integracion genreacion de reporte de errores https://chatgpt.com/share/67f087d0-2978-8006-aeec-548f119ee8ad
 flujos y entidades principales https://chatgpt.com/share/67f08b0e-91ec-8006-92ae-880d5b36927f
 Casos de prueba modulares https://chatgpt.com/share/67f08d2b-c35c-8006-a08c-13b710993e75
+Unit test https://chatgpt.com/share/67f0b03d-5828-8006-8be1-19789e00f722
